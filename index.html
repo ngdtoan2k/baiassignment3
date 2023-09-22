@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <title>Assignment 02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div id="banner">
+      <img class="imgst"
+        src="images/header.jpg"
+        alt="ah"
+        style="height: 410px; object-fit: cover;"
+      />
+      <div class="ten">
+        <h1>Nguyễn Đức Toàn</h1>
+        <span>Java Developer</span>
+      </div>
+    </div>
+
+    <section id="nav-bar">
+      <nav class="container">
+        <ul class="top-nav">
+          <li>
+            <a href="#about"><i class="icon-user"></i>Thông tin</a>
+          </li>
+
+          <li>
+            <a href="#job-info"><i class="icon-doc-text-inv"></i>Lý lịch</a>
+          </li>
+
+          <li>
+            <div class="nav-center">
+              <p>Nguyễn Đức Toàn <br />Java Developer</p>
+            </div>
+          </li>
+
+          <li>
+            <a href="#certificate"><i class="icon-mail-alt"></i>Chứng chỉ</a>
+          </li>
+
+          <li>
+            <a href="#project"><i class="icon-star-1"></i>Dự Án</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="about" class="bg-grey">
+      <div class="container grid1">
+        <div id="target" class="grid2">
+          <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+          <p class="mtnn">
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+            <b>Java Developer</b>, có thể vận dụng những kiến thức đã được
+            trau dồi và không ngừng học hỏi để phát triển bản thân, cũng như
+            hoàn thành tốt nhất công việc được giao.
+          </p>
+        </div>
+        <div id="personal-info" class="grid3">
+          <h1 class="section-title">Thông tin cá nhân</h1>
+
+          <form name="form1" id="form1" method="post">
+            <input type="text" name="email" id="email" size="40"><br>
+            <p>Hãy nhập email để xác thực</p>
+            <input type="button" name="Check" value="Submit" onclick="checkform();">
+          </form>
+          <div id="ttcnhan">
+          <ul class="mt-40 info">
+
+            <li><span>Giới tính</span> : Nam</li>
+            <li><span>Ngày sinh</span> : 15/04/2000</li>
+            <li><span>Điện thoại</span> : 0832957668</li>
+            <li><span>Email</span> : sinhvien@funix.edu.vn</li>
+            <li><span>Địa chỉ</span> : Phùng Khoang, Nam Từ Liêm, Hà Nội</li>
+            <li><span>Website</span> : https://toannd.tech</li>
+          </ul>
+          <a href="https://twitter.com/?lang=vi"><i style="font-size: 1em; " class="icon-twitter"></i></a>
+          <a href="https://www.facebook.com/?locale=vi_VN"><i style="font-size: 1em; " class="icon-facebook"></i></a>
+          <a href="https://github.com/"><i style="font-size: 1em; " class="icon-gplus"></i></a>
+          <a href="https://www.linkedin.com/"><i style="font-size: 1em; " class="icon-linkedin"></i></a>
+          </div>
+        </div>
+       <script src="chucnang.js"></script>
+      </div>
+    </section>
+
+    <section id="job-info">
+      <div class="container">
+      <div class="khh">
+        <div class="kinhnghiem" style="margin-top: 20px">
+          <div class="kinhnghiem1 codinh" onmouseover="hold()" onmouseout="holdend()"><h1 class="sua1" id="knid"  >Kinh nghiệm</h1>
+          <a href="#"><i style="font-size: 3em; margin-left: 40px; color: #b0a5a2;" class="ic-toolbox"></i></a>
+            <button  class="func1" id="add" onclick="vmchecktong();"  >View more</button>
+          </div>
+
+
+        <div class="sua2" id="knsua2"> <p><b>Công ty GAPO</b></p>
+          <div class="ctyy"> <p>05/2022-</p><p class="htai">hiện tại</p></div>
+          <ul>
+            <li>-Java Develooper</li>
+            <li>-Xây dụng và phat triển web dựa trên yêu cầu đã có</li>
+            <Li>-Phân tích và thiết kế Database, sử dụng cách hệ quản trị CSDL</Li>
+          </ul>
+          <p><b>Công ty Sun</b></p>
+          <p>04/2021-05/2022</p>
+          <p>Web Designer</p>
+          <ul>
+            <li>-Thiết kế web dựa trên yêu cầu của khách hàng</li>
+            <Li>-Sử dụng công cụ:Figma, canva, PTS.</Li>
+          </ul>
+        </div>
+        </div>
+        <script src="chucnang.js"></script>
+
+        <div class="hocvan" style="margin-top: 20px">
+         <div class="hocvan1 codinh" onmouseover="holdhv()" onmouseout="holdendhv()"><h1 class="sua1" >Học vấn</h1>
+          <a href="#"><i style="font-size: 3em; margin-left: 40px;color: #b0a5a2;" class="ic-pencil"></i></a>
+           <button  class="func1hv" id="addhv" onclick="vmchecktonghv();"  >View more</button>
+        </div>
+       <div id="knsua2hv" class="sua2"> <p><b>Funix</b></p>
+          <p>06/2021-05/2022</p>
+          <ul>
+            <li>-Tốt nghiệp chứng chỉ java</li>
+            <Li>-GPA:9/10</Li>
+          </ul>
+          <p><b>Cử nhân-PTIT</b></p>
+          <p>2018-2023</p>
+          <ul>
+            <li>-Chuyên ngành: CNTT</li>
+            <Li>-GPA:3/4</Li>
+          </ul>
+       </div>
+            <script src="chucnang.js"></script>
+        </div>
+        <div class="hoatdong" style="margin-top: 20px">
+         <div class="hoatdong1 codinh" onmouseover="holdhd()" onmouseout="holdendhd()"> <h1 class="sua1" >Hoạt động</h1>
+          <a href="#"><i style="font-size: 3em; margin-left: 40px; color: #b0a5a2;" class="ic-toolbox"></i></a>
+             <button  class="func1hd" id="addhd" onclick="vmchecktonghd();"  >View more</button>
+         </div>
+            <div id="knsua2hd" class="sua2"> <p><b>Câu lạc bộ SVTN</b></p>
+          <p>06/2019-05/2021</p>
+          <p>-Thành viên</p>
+          <p><b>Câu lạc bộ SVND</b></p>
+          <p>04/2021-03/2022</p>
+          <p>-Thành viên</p>
+        </div>
+        </div>
+          <script src="chucnang.js"></script>
+
+        <div class="sothich" style="margin-top: 20px">
+         <div class="sothich1 codinh" onmouseover="holdst()" onmouseout="holdendst()"> <h1 class="sua1">Sở thích</h1>
+           <a href="#"><i style="font-size: 3em; margin-left: 40px; color: #b0a5a2;" class="ic-telescope"></i></a>
+             <button  class="func1st" id="addst" onclick="vmchecktongst();"  >View more</button>
+         </div>
+            <div id="knsua2st" class="sua2">
+          <div class="sothich2">
+          <a href="#" ><i style="font-size: 1.6em"; class="ic-megaphone iconst"></i></a>
+          <a href="#"><i style="font-size: 1.6em"; class="ic-hotairballoon iconst"></i></a>
+          <a href="#"><i style="font-size: 1.6em"; class="ic-strategy iconst"></i></a>
+          <a href="#"><i style="font-size: 1.6em"; class="ic-basket iconst"></i></a>
+          <p>Âm nhạc</p>
+          <p>Du lịch</p>
+          <p>Chơi game</p>
+          <p>Nấu ăn</p>
+          </div>
+            </div>
+        </div>
+          <script src="chucnang.js"></script>
+        <div class="ngonngu" style="margin-top: 20px">
+          <div class="ngonngu1 codinh" onmouseover="holdnn()" onmouseout="holdendnn()"><h1 class="sua1">Ngôn ngữ</h1>
+          <a href="#"><i style="font-size: 3em; margin-left: 40px;color: #b0a5a2;" class="ic-mic"></i></a>
+              <button  class="func1nn" id="addnn" onclick="vmchecktongnn();"  >View more</button>
+          </div>
+        <div id="knsua2nn" class="sua2">  <p>English-IELTS 7.0</p>
+          <span class="span">   </span>
+          <span class="span">   </span>
+          <span class="span1">   </span>
+          <p>Japanese-N3</p>
+          <span class="span">   </span>
+          <span class="span1">   </span>
+          <span class="span1">   </span>
+        </div>
+        </div>
+          <script src="chucnang.js"></script>
+
+        <div class="kynang" style="margin-top: 20px">
+          <div class="kynang1 codinh" onmouseover="holdkn()" onmouseout="holdendkn()"><h1 class="sua1">Kỹ năng</h1>
+            <a href="#"><i style="font-size: 3em; margin-left: 40px; color: #b0a5a2;" class="ic-tools-2"></i></a>
+              <button  class="func1kn" id="addkn" onclick="vmchecktongkn();"  >View more</button>
+          </div>
+            <div id="knsua2kn" class="sua2"> <p>HTML/CSS: Fundamental</p>
+          <span class="span">   </span>
+          <span class="span">   </span>
+          <span class="span1">   </span>
+          <p>Javascript: Intermediate</p>
+          <span class="span">   </span>
+          <span class="span1">   </span>
+          <span class="span1">   </span>
+          <p>NodeJs: Intermediate</p>
+          <span class="span">   </span>
+          <span class="span">   </span>
+          <span class="span1">   </span>
+          <p>Bootstrap5: Fundamental</p>
+          <span class="span">   </span>
+          <span class="span1">   </span>
+          <span class="span1">   </span>
+            </div>
+        </div>
+          <script src="chucnang.js"></script>
+      </div>
+
+      </div>
+
+    </section>
+    <section id="certificate" class="bg-grey">
+      <div class="container ccgtbox">
+        <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+      <div class="ccgt2"> <div class="ccgt"> <img class="imgccgt" src="images/hoc-lap-trinh-web-cho-hoc-sinh.jpeg" alt="as" />
+         <div class="ccgt1"><p>CHỨNG CHỈ LẬP TRÌNH WEB-FUNIX</p>
+        <p>-Chứng chỉ thuộc chương trình CCDN</p>
+        <p>-GPA:8.6</p>
+         </div>
+       </div>
+       <div class="ccgt ccgt4"> <img class="imgccgt" src="images/học-Java.png" alt="as"/>
+         <div class="ccgt1"> <p>CHỨNG CHỈ LẬP TRÌNH JAVA-FUNIX</p>
+        <p>-Chứng chỉ thuộc chương trình CCDN</p>
+        <p>-GPA:8.0</p>
+         </div>
+       </div>
+       <div class="ccgt ccgt5"> <img class="imgccgt" src="images/Cert_DBI.png" alt="as"/>
+       <div class="ccgt1"> <p>CHỨNG CHỈ LẬP TRÌNH DATABASE-FUNIX</p>
+        <p>-Chứng chỉ thuộc chương trình CCDN</p>
+        <p>-GPA:7.6</p>
+       </div>
+       </div>
+        <div class="ccgt5"></div>
+      </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="container">
+        <h1 class="section-title">Dự án</h1>
+        <div class="duantong">
+          <div class="duan">
+            <img class="duanimg" src="images/cvcanhan.png" alt="addf">
+           <div class="cvcanhan"> <p>CV CÁ NHÂN</p></div>
+         <div class="duan1 cvcanhan">
+           <div class="chu"><p>2021</p></div>
+           <div class="duan1">  <a href="#"><i style="font-size: 1.5em"; class="icon-user-1"></i></a><p>FUNIX</p></div>
+           <div class="duan1">  <a href="#"><i style="font-size: 1.5em"; class="icon-lamp"></i></a><p>Developer</p></div>
+         </div >
+            <table class="cvcanhan">
+              <tr>
+                <th>Mô tả</th>
+                <td>Trang web cv cá nhân online.Gồm các thông tin cá nhân và kỹ năng nghề nghiệp</td>
+              </tr>
+              <tr>
+                <th>Nhiệm vụ</th>
+                <td>-Phát triển code-Review code-Tối ưu code-Xử lí lỗi</td>
+              </tr>
+              <tr>
+                <th>Công nghệ</th>
+                <td>-Html,CSS</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="duan">
+            <img class="duanimg" src="images/qlythucung.jpg" alt="addf">
+            <div class="cvcanhan"> <p>TRANG WEB QUAN LY THÚ CƯNG</p></div>
+            <div class="duan1 cvcanhan">
+              <div class="chu"><p>2021</p></div>
+              <div class="duan1">  <a href="#"><i style="font-size: 1.5em"; class="icon-user-1"></i></a><p>FUNIX</p></div>
+              <div class="duan1">  <a href="#"><i style="font-size: 1.5em"; class="icon-lamp"></i></a><p>Developer</p></div>
+            </div >
+            <table class="cvcanhan">
+              <tr>
+                <th>Mô tả</th>
+                <td>Ứng dụng giúp quản lý các thông tin về thú cưng như: Cân nặng, giống, tình trang tiêm chủng</td>
+              </tr>
+              <tr>
+                <th>Nhiệm vụ</th>
+                <td>-Phát triển code-Review code-Tối ưu code-Xử lí lỗi</td>
+              </tr>
+              <tr>
+                <th>Công nghệ</th>
+                <td>-Html,CSS,javascript</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="duan">
+            <img class="duanimg" src="images/webtintuc.png" alt="addf">
+            <div class="cvcanhan"> <p>TRANG WEB XEM TIN TỨC</p></div>
+            <div class="duan1 cvcanhan">
+              <div class="chu"><p>2021</p></div>
+              <div class="duan1">  <a href="#"><i style="font-size: 1.5em"; class="icon-user-1"></i></a><p>FUNIX</p></div>
+              <div class="duan1">  <a href="#"><i style="font-size: 1.5em"; class="icon-lamp"></i></a><p>Developer</p></div>
+            </div >
+            <table  class="cvcanhan">
+              <tr>
+                <th>Mô tả</th>
+                <td>Trang web xem tin tức từ nhiều nguồn khác nhau. Người xem có thể tìm kiếm dựa theo từ khoá</td>
+              </tr>
+              <tr>
+                <th>Nhiệm vụ</th>
+                <td>-Phát triển code-Review code-Tối ưu code-Xử lí lỗi</td>
+              </tr>
+              <tr>
+                <th>Công nghệ</th>
+                <td>-Html,CSS</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="bg-grey">
+      <div class="container">
+        <ul class="lienhe">
+          <li class="lienhe1"><a href="https://www.facebook.com/?locale=vi_VN"><i style="font-size: 2em; " class="icon-facebook-circled"></i></a> Facebook</li>
+          <li class="lienhe1"> <a href="https://www.linkedin.com/"><i style="font-size: 2em"; class="icon-linkedin-circled"></i></a> Linkedin</li>
+          <li class="lienhe1"><a href="https://github.com/"><i style="font-size: 2em"; class="icon-github-circled"></i></a> Github</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
